@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: 'rain-forecast-service'
+    metrics_path: '/metrics'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['rain-forecast-service:8086']
